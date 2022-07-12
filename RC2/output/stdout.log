@@ -1,0 +1,11 @@
+==============================================================================
+Tasks :: Orders robots from RobotSpareBin Industries Inc. Saves the order H...
+==============================================================================
+Order robots from RobotSpareBin Industries Inc                        | FAIL |
+String '${order}' used with invalid index 'Head'. To use '[Head]' as a literal value, it needs to be escaped like '\[Head]'.
+------------------------------------------------------------------------------
+Tasks :: Orders robots from RobotSpareBin Industries Inc. Saves th... | FAIL |
+1 task, 0 passed, 1 failed
+==============================================================================
+Output:  c:\Users\E1329245\OneDrive - Emerson\Desktop\RC2\output\output.xml
+Log:     c:\Users\E1329245\OneDrive - Emerson\Desktop\RC2\output\log.html

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.5 on win32)" generated="20220708 12:01:02.739" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\E1329245\OneDrive - Emerson\Desktop\RC2\tasks.robot">
+<test id="s1-t1" name="Order robots from RobotSpareBin Industries Inc" line="27">
+<kw name="Get Secret" library="RPA.Robocorp.Vault">
+<var>${URL}</var>
+<arg>URL</arg>
+<doc>Read a secret from the configured source, e.g. Robocorp Vault,
+and return it as a ``Secret`` object.</doc>
+<msg timestamp="20220708 12:01:08.038" level="INFO">Protecting keyword: RPA.Robocorp.Vault.Get Secret</msg>
+<msg timestamp="20220708 12:01:08.047" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="FAIL" starttime="20220708 12:01:05.987" endtime="20220708 12:01:08.045"/>
+</kw>
+<kw name="Open Website">
+<status status="NOT RUN" starttime="20220708 12:01:08.049" endtime="20220708 12:01:08.050"/>
+</kw>
+<kw name="Download The Orders CSV">
+<var>${orders}</var>
+<arg>${URL}</arg>
+<status status="NOT RUN" starttime="20220708 12:01:08.051" endtime="20220708 12:01:08.051"/>
+</kw>
+<kw name="Fill and submit orders">
+<arg>${orders}</arg>
+<status status="NOT RUN" starttime="20220708 12:01:08.053" endtime="20220708 12:01:08.053"/>
+</kw>
+<kw name="close the browser">
+<status status="NOT RUN" starttime="20220708 12:01:08.056" endtime="20220708 12:01:08.057"/>
+</kw>
+<status status="FAIL" starttime="20220708 12:01:05.980" endtime="20220708 12:01:08.063">KeyError: 'Missing required environment variable: RC_API_SECRET_HOST'</status>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.
+Saves the order HTML receipt as a PDF file.
+Saves the screenshot of the ordered robot.
+Embeds the screenshot of the robot to the PDF receipt.
+Creates ZIP archive of the receipts and the images.</doc>
+<status status="FAIL" starttime="20220708 12:01:02.746" endtime="20220708 12:01:08.071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
